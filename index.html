@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南京汇商融通电子科技有限公司 · 易捷通南京分公司</title>
+<meta name="description" content="南京汇商融通电子科技有限公司——易捷通智能收款机江苏区域销售与服务商，服务超10万家客户，覆盖江苏13个地级市。智汇收银，易通天下。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230C1B2E'/%3E%3Ctext x='16' y='23' font-size='19' fill='%23C9A24B' text-anchor='middle' font-family='Georgia,serif' font-weight='700'%3E%E6%B1%87%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap">
+<style>
+  :root{
+    --ink:#0C1B2E;        /* 深海墨蓝 · 主底 */
+    --ink-2:#12263F;      /* 次级深蓝 */
+    --ink-3:#1A3352;      /* 卡片深蓝 */
+    --gold:#C9A24B;       /* 商业金 · 强调 */
+    --gold-soft:#E3C982;  /* 浅金 */
+    --paper:#F4F2EC;      /* 米白 · 浅底 */
+    --paper-2:#ECE9DF;    /* 米白次级 */
+    --line:#22384F;       /* 深底分隔线 */
+    --text-l:#E9EDF2;     /* 深底主字 */
+    --muted-l:#93A5B8;    /* 深底次字 */
+    --text-d:#23303E;     /* 浅底主字 */
+    --muted-d:#5D6B7B;    /* 浅底次字 */
+    --serif:"Noto Serif SC",Georgia,"Songti SC",SimSun,serif;
+    --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--sans);background:var(--ink);color:var(--text-l);line-height:1.7;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  section{scroll-margin-top:64px}
+  .eyebrow{font-size:13px;letter-spacing:.28em;color:var(--gold);font-weight:500;margin-bottom:14px}
+  .serif{font-family:var(--serif)}
+  h2.title{font-family:var(--serif);font-size:clamp(26px,4.4vw,40px);line-height:1.3;font-weight:700;color:inherit}
+
+  /* ===== 导航 ===== */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(12,27,46,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:700;font-size:17px}
+  .brand-mark{width:30px;height:30px;border-radius:7px;background:var(--ink-3);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--gold);flex:none}
+  .brand small{display:block;font-family:var(--sans);font-weight:400;font-size:11px;color:var(--muted-l);letter-spacing:.1em}
+  .nav-links{display:none}
+  @media (min-width:768px){
+    .nav-links{display:flex;gap:30px;font-size:14px;color:var(--muted-l)}
+    .nav-links a{transition:color .2s}
+    .nav-links a:hover{color:var(--gold-soft)}
+  }
+
+  /* ===== Hero ===== */
+  .hero{position:relative;min-height:86vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;background:url("hero.jpg") center/cover no-repeat;filter:saturate(.82) brightness(.5)}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,27,46,.78) 0%,rgba(12,27,46,.55) 46%,rgba(12,27,46,.92) 100%)}
+  .hero-inner{position:relative;z-index:2;max-width:860px;padding:96px 22px 72px}
+  .hero .eyebrow{animation:rise .9s ease both}
+  .hero h1{font-family:var(--serif);font-size:clamp(32px,6.6vw,58px);line-height:1.22;font-weight:700;letter-spacing:.04em;animation:rise .9s .12s ease both}
+  .hero h1 .gold{color:var(--gold-soft)}
+  .hero p.lead{margin:22px auto 30px;max-width:600px;font-size:clamp(15px,2.2vw,18px);color:var(--text-l);opacity:.92;animation:rise .9s .24s ease both}
+  .hero .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:rise .9s .36s ease both}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 30px;border-radius:4px;font-size:15px;font-weight:500;cursor:pointer;border:1px solid transparent;transition:transform .2s,background .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:#1A2A3C}
+  .btn-gold:hover{background:var(--gold-soft)}
+  .btn-ghost{border-color:rgba(233,237,242,.4);color:var(--text-l)}
+  .btn-ghost:hover{border-color:var(--gold-soft);color:var(--gold-soft)}
+  .hero-meta{margin-top:40px;font-size:13px;color:var(--muted-l);letter-spacing:.14em;animation:rise .9s .5s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+  /* ===== 数据带 ===== */
+  .stats{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:30px 18px;padding:52px 22px}
+  .stat{text-align:center}
+  .stat b{display:block;font-family:var(--serif);font-size:clamp(34px,5vw,50px);color:var(--gold-soft);font-weight:700;line-height:1.15}
+  .stat span{font-size:13px;color:var(--muted-l);letter-spacing:.08em}
+  @media (min-width:768px){.stats .wrap{grid-template-columns:repeat(4,1fr);gap:20px;padding:64px 22px}}
+
+  /* ===== 公司简介 ===== */
+  .about{background:var(--paper);color:var(--text-d)}
+  .about .wrap{display:grid;gap:34px;padding:76px 22px}
+  .about-grid{display:grid;gap:26px}
+  .about p{font-size:16px;color:var(--muted-d);margin-top:14px}
+  .about p strong{color:var(--text-d);font-weight:600}
+  .about-facts{display:grid;gap:12px}
+  .fact{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #DFDBCF;border-radius:6px;padding:15px 16px}
+  .fact svg{flex:none;margin-top:2px}
+  .fact b{display:block;font-size:15px;color:var(--text-d);font-weight:600}
+  .fact span{font-size:13.5px;color:var(--muted-d)}
+  @media (min-width:768px){
+    .about .wrap{padding:100px 22px}
+    .about-grid{grid-template-columns:1.25fr .9fr;gap:56px;align-items:start}
+    .about-facts{grid-template-columns:1fr 1fr}
+  }
+
+  /* ===== 产品体系 ===== */
+  .products{background:var(--ink-2)}
+  .products .wrap{padding:76px 22px 84px}
+  .prod-head{display:flex;flex-direction:column;gap:8px}
+  .prod-sub{font-size:15px;color:var(--muted-l);max-width:640px}
+  .prod-grid{display:grid;gap:14px;margin-top:40px}
+  .prod-card{background:var(--ink-3);border:1px solid var(--line);border-radius:6px;padding:24px 22px;transition:border-color .25s,transform .25s}
+  .prod-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+  .prod-card svg{color:var(--gold)}
+  .prod-card h3{font-size:16.5px;font-weight:600;margin:14px 0 6px}
+  .prod-card p{font-size:13.5px;color:var(--muted-l)}
+  .newretail{display:grid;gap:14px;margin-top:22px}
+  .new-card{display:flex;gap:14px;align-items:center;background:linear-gradient(135deg,var(--ink-3),var(--ink-2));border:1px solid var(--line);border-radius:6px;padding:18px 20px;transition:border-color .25s}
+  .new-card:hover{border-color:var(--gold)}
+  .new-card svg{flex:none;color:var(--gold-soft)}
+  .new-card b{font-size:15.5px;font-weight:600;display:block}
+  .new-card span{font-size:13px;color:var(--muted-l)}
+  .block-label{display:inline-flex;align-items:center;gap:8px;margin-top:46px;font-size:13px;letter-spacing:.22em;color:var(--gold)}
+  .block-label::before{content:"";width:22px;height:1px;background:var(--gold)}
+  @media (min-width:768px){
+    .products .wrap{padding:100px 22px 108px}
+    .prod-grid{grid-template-columns:repeat(2,1fr)}
+    .newretail{grid-template-columns:repeat(5,1fr)}
+    .new-card{flex-direction:column;align-items:flex-start;text-align:left}
+  }
+
+  /* ===== 应用行业 ===== */
+  .industry{background:var(--paper);color:var(--text-d)}
+  .industry .wrap{padding:76px 22px 84px}
+  .industry p.sub{color:var(--muted-d);margin-top:10px;font-size:15px;max-width:620px}
+  .tag-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:38px}
+  .tag{display:flex;align-items:center;gap:11px;background:#fff;border:1px solid #DFDBCF;border-radius:6px;padding:14px 16px;font-size:14.5px;font-weight:500;transition:border-color .2s,transform .2s}
+  .tag:hover{border-color:var(--gold);transform:translateY(-2px)}
+  .tag svg{flex:none}
+  @media (min-width:768px){
+    .industry .wrap{padding:100px 22px 108px}
+    .tag-grid{grid-template-columns:repeat(4,1fr);gap:12px}
+  }
+
+  /* ===== 团队升级 ===== */
+  .upgrade{background:var(--ink)}
+  .upgrade .wrap{padding:76px 22px 84px}
+  .up-list{display:grid;gap:0;margin-top:44px}
+  .up-item{display:grid;grid-template-columns:92px 26px 1fr;gap:16px;align-items:start}
+  .up-role{font-size:14px;letter-spacing:.14em;color:var(--muted-l);padding-top:6px;font-weight:500}
+  .up-axis{position:relative;height:100%;min-height:150px;justify-self:center;width:26px}
+  .up-dot{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--ink);box-shadow:0 0 0 1px var(--gold)}
+  .up-line{position:absolute;top:24px;bottom:-2px;left:50%;width:1px;background:var(--line);transform:translateX(-0.5px)}
+  .up-item:last-child .up-line{display:none}
+  .up-content{padding-bottom:38px}
+  .up-from{font-size:13.5px;color:var(--muted-l);text-decoration:line-through;text-decoration-color:rgba(147,165,184,.55)}
+  .up-to{font-family:var(--serif);font-size:clamp(19px,3vw,24px);color:var(--gold-soft);font-weight:700;margin-top:2px;line-height:1.4}
+  .up-desc{font-size:14px;color:var(--muted-l);margin-top:8px;max-width:560px}
+  @media (min-width:768px){
+    .upgrade .wrap{padding:100px 22px 108px}
+    .up-item{grid-template-columns:160px 30px 1fr;gap:22px}
+    .up-axis{width:30px;min-height:150px}
+  }
+
+  /* ===== 理念愿景 ===== */
+  .vision{background:linear-gradient(180deg,var(--ink-2),var(--ink));position:relative;overflow:hidden}
+  .vision .wrap{padding:84px 22px 96px;text-align:center}
+  .vision .eyebrow{margin-bottom:18px}
+  .vision .big{font-family:var(--serif);font-size:clamp(24px,4.2vw,37px);line-height:1.5;color:var(--gold-soft);font-weight:700;max-width:880px;margin:0 auto}
+  .vision .slogan{margin-top:26px;font-size:15px;color:var(--text-l);max-width:640px;margin-left:auto;margin-right:auto;opacity:.9}
+  .value-row{display:grid;gap:14px;margin-top:54px;text-align:left}
+  .value-card{background:rgba(26,51,82,.5);border:1px solid var(--line);border-radius:6px;padding:26px 24px;transition:border-color .25s}
+  .value-card:hover{border-color:var(--gold)}
+  .value-card b{display:block;font-family:var(--serif);font-size:18px;color:var(--gold-soft);font-weight:700;margin-bottom:8px}
+  .value-card span{font-size:14px;color:var(--muted-l);line-height:1.75}
+  @media (min-width:768px){
+    .vision .wrap{padding:110px 22px 120px}
+    .value-row{grid-template-columns:repeat(3,1fr);gap:18px}
+  }
+
+  /* ===== Footer ===== */
+  .footer{border-top:1px solid var(--line);background:var(--ink)}
+  .footer .wrap{display:flex;flex-direction:column;gap:12px;align-items:center;padding:42px 22px;text-align:center}
+  .footer .brand small{color:var(--muted-l)}
+  .footer p{font-size:13px;color:var(--muted-l)}
+  .footer .gold-line{width:40px;height:1px;background:var(--gold);margin:2px auto}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark">汇</span>
+      <span>南京汇商融通<small>易捷通南京分公司</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">公司简介</a>
+      <a href="#products">产品体系</a>
+      <a href="#industries">应用行业</a>
+      <a href="#upgrade">团队升级</a>
+      <a href="#vision">理念愿景</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">商业智能收银 · 零售信息化服务商</div>
+    <h1>智汇收银，<span class="gold">易通天下</span></h1>
+    <p class="lead">专注商业POS收款机、收银软件与智能零售设备的销售与服务，让零售信息化更加智能，让每一次交易自由安全畅通。</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#about">了解汇商融通</a>
+      <a class="btn btn-ghost" href="#products">查看产品体系</a>
+    </div>
+    <div class="hero-meta">EST. 2010 · 江苏全域本地化服务</div>
+  </div>
+</header>
+
+<!-- ===== 数据带 ===== -->
+<section class="stats" aria-label="服务规模">
+  <div class="wrap">
+    <div class="stat"><b data-count="10" data-suffix="万+">10万+</b><span>江苏服务客户</span></div>
+    <div class="stat"><b data-count="13">13</b><span>覆盖地级市</span></div>
+    <div class="stat"><b data-count="22">22</b><span>覆盖县级市</span></div>
+    <div class="stat"><b data-count="50" data-suffix="+">50+</b><span>渠道服务商</span></div>
+  </div>
+</section>
+
+<!-- ===== 公司简介 ===== -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="eyebrow">关于我们</div>
+        <h2 class="title">从一台收款机，到一整套零售信息化服务</h2>
+        <p><strong>南京汇商融通电子科技有限公司</strong>是易捷通南京分公司，成立于<strong>2010年6月1日</strong>，是一家集商业POS收款机、条码打印机、收银软件系统集成及周边配套设施销售服务于一体的企业。</p>
+        <p>公司负责易捷通智能收款机在江苏区域的销售与服务工作，致力于为客户打造性价比最好的商用设备，以完善的售后服务为商户购买产品提供坚实保障。</p>
+      </div>
+      <div class="about-facts">
+        <div class="fact">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.6-7-10a7 7 0 1 1 14 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.6"/></svg>
+          <div><b>本地化上门服务</b><span>在江苏13个地级市、22个县级市，拥有超过50家渠道服务商，为客户提供便捷的本地化上门服务。</span></div>
+        </div>
+        <div class="fact">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.8" aria-hidden="true"><path d="M12 2l2.4 5.2L20 8l-4 4.2 1 5.8-5-2.8-5 2.8 1-5.8L4 8l5.6-.8z"/></svg>
+          <div><b>性价比优先</b><span>为客户打造性价比最好的商用设备，从售前方案到售后维护全程保障。</span></div>
+        </div>
+        <div class="fact">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 5v14"/></svg>
+          <div><b>全业态覆盖</b><span>商场、超市、餐饮、医药、服装、美发、烘焙、足浴……服务广泛行业商户。</span></div>
+        </div>
+        <div class="fact">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.8" aria-hidden="true"><path d="M4 19V9m5 10V5m5 14v-7m5 7V2"/></svg>
+          <div><b>持续演进</b><span>2017年起随新零售发展，从集成商升级为运营服务商，团队同步进化。</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 产品体系 ===== -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="prod-head">
+      <div class="eyebrow">产品体系</div>
+      <h2 class="title">核心设备 + 新零售创新</h2>
+      <p class="prod-sub">从传统商业设备到数字化零售终端，一套体系满足门店的收银、营销与数字化升级需求。</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="2.5" width="16" height="13" rx="2"/><rect x="7" y="5.5" width="10" height="6"/><path d="M8 18.5h3M13 18.5h3M12 15.5v3"/></svg>
+        <h3>商业POS收款机</h3>
+        <p>覆盖商超、餐饮、服饰等全业态的智能收银终端，性能稳定、操作便捷。</p>
+      </div>
+      <div class="prod-card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 5V2.5h12V5"/><rect x="4.5" y="5" width="15" height="4" rx="1"/><path d="M5 9v12h14V9M5 12h14M4.5 9h15"/><path d="M7 14.5h4M7 17h4" stroke-width="1.4"/></svg>
+        <h3>条码打印机</h3>
+        <p>标签打印解决方案，助力商品管理与价签管理高效运转。</p>
+      </div>
+      <div class="prod-card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4M3 9h18M7 7.5h.01M10 7.5h.01"/></svg>
+        <h3>收银软件系统集成</h3>
+        <p>从单机收银到连锁管理，软件与硬件深度集成，适配门店实际经营场景。</p>
+      </div>
+      <div class="prod-card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 4a8 8 0 1 0 8 8"/><path d="M12 8a4 4 0 1 0 4 4"/><path d="M16 4v4h4"/></svg>
+        <h3>周边配套设备</h3>
+        <p>钱箱、扫码枪、顾客显示屏等全套周边，一站式配齐门店所需。</p>
+      </div>
+    </div>
+    <div class="block-label">新零售创新产品</div>
+    <div class="newretail">
+      <div class="new-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 15.5V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7.5"/><path d="M2 15.5h20v3.5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/><path d="M7 15.5v2.5M12 15.5v2.5M17 15.5v2.5"/></svg>
+        <div><b>电子标价签</b><span>云端改价，一步到位</span></div>
+      </div>
+      <div class="new-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 11a9 9 0 1 1 18 0"/><path d="M7.5 11a4.5 4.5 0 1 0 9 0"/><path d="M2 21h6M16 21h6M8 21h8"/></svg>
+        <div><b>刷脸支付</b><span>无感支付，更快结账</span></div>
+      </div>
+      <div class="new-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M5 20a7 7 0 0 1 14 0"/><path d="M18 3l1 2.2 2.4.3-1.8 1.7.5 2.5-2.1-1.3-2.1 1.3.5-2.5L14.6 5.5l2.4-.3z" stroke-width="1.3"/></svg>
+        <div><b>人脸会员识别</b><span>会员到店，即刻识别</span></div>
+      </div>
+      <div class="new-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v18M4 8l8-4 8 4-8 4z"/><path d="M7 9v6M11 8v7M15 9v6"/></svg>
+        <div><b>智能称重秤</b><span>称重收银一体化</span></div>
+      </div>
+      <div class="new-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/><path d="M9.5 6.5h5" stroke-width="1.4"/><path d="M12 2.8v-.3" stroke-width="1.4"/></svg>
+        <div><b>扫码购</b><span>随扫随买，自助结账</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 应用行业 ===== -->
+<section class="industry" id="industries">
+  <div class="wrap">
+    <div class="eyebrow">应用行业</div>
+    <h2 class="title">服务广泛业态</h2>
+    <p class="sub">产品广泛用于商场、超市、餐饮、零售、生活服务等十二大行业，为每一类商户提供适配的收银与数字化方案。</p>
+    <div class="tag-grid">
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>商场</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>超市</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>中餐</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>西餐</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>奶茶</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>医药</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>服装</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>母婴用品</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>化妆品</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>美容美发</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>烘焙面包</div>
+      <div class="tag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>桑拿足浴</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 团队升级 ===== -->
+<section class="upgrade" id="upgrade">
+  <div class="wrap">
+    <div class="eyebrow">团队升级</div>
+    <h2 class="title">2017 · 随新零售而变</h2>
+    <p class="prod-sub" style="margin-top:10px">随着商业变革与新零售发展，团队从卖设备到懂经营，完成三重新定位。</p>
+    <div class="up-list">
+      <div class="up-item">
+        <div class="up-role">公司定位</div>
+        <div class="up-axis"><span class="up-dot"></span><span class="up-line"></span></div>
+        <div class="up-content">
+          <div class="up-from">从集成商 · 售卖产品、维修产品</div>
+          <div class="up-to">升级为运营服务商 · 产品服务客户服务</div>
+          <div class="up-desc">不再只是卖一台机器，而是围绕客户经营提供持续服务。</div>
+        </div>
+      </div>
+      <div class="up-item">
+        <div class="up-role">销售定位</div>
+        <div class="up-axis"><span class="up-dot"></span><span class="up-line"></span></div>
+        <div class="up-content">
+          <div class="up-from">从客户产品的报价</div>
+          <div class="up-to">转变为经营模式的传递</div>
+          <div class="up-desc">销售人员完成自我提升，从销售员转变为客户经营团队的一份子。</div>
+        </div>
+      </div>
+      <div class="up-item">
+        <div class="up-role">技术定位</div>
+        <div class="up-axis"><span class="up-dot"></span><span class="up-line"></span></div>
+        <div class="up-content">
+          <div class="up-from">从技术实施、维修人员</div>
+          <div class="up-to">成长为客户营运人员</div>
+          <div class="up-desc">懂技术更懂门店经营，帮助客户把数字化真正用起来。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 理念愿景 ===== -->
+<section class="vision" id="vision">
+  <div class="wrap">
+    <div class="eyebrow">理念与愿景</div>
+    <div class="big">关注顾客需求，洞悉市场变化，顺应行业趋势，成就客户价值</div>
+    <p class="slogan">让零售信息化更加智能，让信息化的应用在全球每个角落都能自由安全畅通——这是易捷通孜孜以求的梦想。</p>
+    <div class="value-row">
+      <div class="value-card">
+        <b>核心价值观</b>
+        <span>与客户共同成功、与员工共同成长、与社会共同进步</span>
+      </div>
+      <div class="value-card">
+        <b>企业气概</b>
+        <span>树行业标杆，创民族品牌，筑常青基业</span>
+      </div>
+      <div class="value-card">
+        <b>品牌愿景</b>
+        <span>智汇收银，易通天下——以智能与畅通，服务每一家商户、每一个场景</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand">
+      <span class="brand-mark">汇</span>
+      <span>南京汇商融通电子科技有限公司<small>易捷通南京分公司 · 商业智能收银服务商</small></span>
+    </div>
+    <div class="gold-line"></div>
+    <p>专注商业POS · 新零售数字化 · 江苏全域本地化服务</p>
+    <p>© 2026 南京汇商融通电子科技有限公司</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* 数字滚动：仅当元素进入视口时从 0 计数到目标 */
+  var els = document.querySelectorAll('.stat b[data-count]');
+  if(!('IntersectionObserver' in window) || !els.length) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(!en.isIntersecting) return;
+      io.unobserve(en.target);
+      var target = parseInt(en.target.getAttribute('data-count'), 10);
+      var suffix = en.target.getAttribute('data-suffix') || '';
+      var start = null, dur = 1400;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        en.target.textContent = Math.round(target * eased) + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }, {threshold:.4});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
